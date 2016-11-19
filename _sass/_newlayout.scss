@@ -18,6 +18,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: RGBA(184, 168, 155, 1.0);
 }
 
 
@@ -26,9 +27,234 @@ body {
   -------------- */
 nav {
 
+    li {
+        font-family: $nav-font!important;
+        margin-bottom: 0;
+
+        a {
+            color: #000000;
+        }
+
+
+    }
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: RGBA(181, 172, 167, 1.00) !important;
+    color: white;
+}
+
+.navbar {
+
+    .navbar-brand {
+        padding: 5px 15px 15px 15px;
+
+        img {
+            height: 50px;
+        }
+    }
+}
+
+.navbar-opa {
+    background-color: RGBA(184, 168, 155, 0.6);
+}
+
+/*--------------
+  General
+  -------------- */
+.container {
+  font-family: $base-font;
+}
+
+/*--------------
+  Header
+  -------------- */
+.header.jumbotron {
+    margin: 50px auto 0 auto!important;
+    padding-bottom: 20px;
+
+    background: url('/assets/images/header/bg_4.jpg') no-repeat 0 0 transparent;
+    background-size: 100% auto;
+
+    .container {
+        // height: 45rem;
+        //height: 100vh;
+        position: relative;
+
+        .header-content {
+            width: 33rem;
+            float: right;
+        }
+    }
+}
+
+.social-links {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    ul {
+        list-style: none;
+
+        .social-svg {
+            // fill: red;
+        }
+    }
+}
+
+/* Extra large display */
+@media screen and (min-width: 1280px){
+    .jumbotron {
+        .container {
+            height: 65rem;
+        }
+    }
+}
+
+/* Retina display */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .jumbotron {
+        .container {
+            height: 48rem;
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 980px) and (max-width: 1024px) {
+    .jumbotron {
+        .container {
+            height: 45rem;
+        }
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 980px){
+    .jumbotron {
+        .container {
+            height: 38rem;
+        }
+    }
 }
 
 
-.container {
-  font-family: $base-font;
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px){
+    .jumbotron {
+        .container {
+            height: 28rem;
+        }
+    }
+}
+
+/*--------------
+  Skills
+  -------------- */
+.container.skills {
+    padding-bottom: 40px;
+
+    .skill.row {
+
+        .brd-btm {
+            border-bottom: 1px solid RGBA(247, 215, 166, 1.00);
+        }
+
+        .brd-right {
+            border-right: 1px solid RGBA(247, 215, 166, 1.00);
+        }
+
+
+        div[class^="col-"] {
+            height: 15rem;
+            // border: 1px solid RGBA(247, 215, 166, 1.0);
+        }
+
+        div[class^="col-"]:hover {
+            background-color: RGBA(247, 215, 166, 0.6);
+            cursor: pointer;
+        }
+
+        img {
+            height: 10rem;
+            margin: 0 auto;
+            padding-top:5rem;
+        }
+    }
+}
+
+/*--------------
+  Portfolio
+  -------------- */
+.portfolio.jumbotron {
+    background-color: RGBA(184, 168, 155, 0.6);
+    margin-bottom: 0!important;
+}
+
+
+/*--------------
+  Blog
+  -------------- */
+.blog.jumbotron {
+    background-color: #FFFFFF;
+    margin-bottom: 0!important;
+}
+
+/*--------------
+  Instagram Feed
+  -------------- */
+.instagram.jumbotron {
+    background-color: RGBA(184, 168, 155, 0.6);
+    margin-bottom: 0!important;
+
+    #instafeed {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-pack: justify;
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-top: -.5vw;
+        margin-left: -.5vw;
+        margin-right: -.5vw;
+
+        a {
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+            -webkit-flex-basis: calc(100%/3);
+            -ms-flex-preferred-size: calc(100%/3);
+            flex-basis: calc(100%/3);
+            line-height: 0;
+            -webkit-transition: opacity .2s ease-in-out;
+            transition: opacity .2s ease-in-out;
+            border: .5vw solid transparent;
+        }
+    }
+}
+
+/*--------------
+  Map
+  -------------- */
+.map.jumbotron {
+    background-color: #FFFFFF;
+    margin-bottom: 0!important;
+}
+
+/*--------------
+  Footer
+  -------------- */
+footer {
+    
 }
