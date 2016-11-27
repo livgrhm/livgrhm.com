@@ -30,60 +30,67 @@
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-fixed-top navbar-opa">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#"><img id="logo" src="/assets/images/logo/logo_b.png" alt="" title="livgrhm" /></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="#">ABOUT <span class="sr-only">(current)</span></a></li>
-            <li><a href="#">BLOG</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+    <header>
+        <!-- Fixed navbar -->
+        <nav class="navbar navbar-fixed-top navbar-opa">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><img id="logo" src="/assets/images/logo/logo_b.png" alt="" title="livgrhm" /></a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active"><a href="#skills">SKILLS <span class="sr-only">(current)</span></a></li>
+                <li><a href="#hireme">HIRE ME</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#blog">BLOG</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
 
-    <!-- PART 1: Header -->
-    <div class="header jumbotron">
-      <div class="container">
-        <div class="header-content">
-            <h1>Olivia Rose Graham.</h1>
-            <p>I'm Olivia, a full-stack web developer currently working in London, UK.</p>
+        <!-- PART 1: Header -->
+        <div class="header jumbotron">
+          <div class="container">
+            <div class="header-content">
+                <h1>Olivia Rose Graham.</h1>
+                <p>I'm Olivia, a full-stack web developer currently working in London, UK.</p>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href=""><img class="social-svg" src="/assets/images/nucleo-social-icons/svg/social-1_logo-twitter.svg"></a></li>
+                </ul>
+            </div>
+          </div>
         </div>
-        <div class="social-links">
-            <ul>
-                <li><a href=""><img class="social-svg" src="/assets/images/nucleo-social-icons/svg/social-1_logo-twitter.svg"></a></li>
-            </ul>
-        </div>
-      </div>
-    </div>
+    </header>
 
     <!-- PART 2: Skills -->
+    <div style="height:50px;"></div>
+    <a name="skills"></a>
     <div class="container skills">
-       <div class="row">
+        <div style="height:50px;"></div>
+        <div class="row">
             <div class="col-md-12">
                 <h2>Skills</h2>
             </div>
-      </div>
-      <div class="skill row">
-          <div class="col-md-4 brd-btm brd-right">
-              <img src="/assets/images/skills/php.png" alt="PHP" title="PHP">
-          </div>
-          <div class="col-md-4 brd-btm brd-right">
-              <img src="/assets/images/skills/java.png" alt="Java" title="Java">
-          </div>
-          <div class="col-md-4 brd-btm">
-              <img src="/assets/images/skills/sql.png" alt="SQL" title="SQL">
-          </div>
-      </div>
+        </div>
+        <div class="skill row">
+            <div class="col-md-4 brd-btm brd-right">
+                <img src="/assets/images/skills/php.png" alt="PHP" title="PHP">
+            </div>
+            <div class="col-md-4 brd-btm brd-right">
+                <img src="/assets/images/skills/java.png" alt="Java" title="Java">
+            </div>
+            <div class="col-md-4 brd-btm">
+                <img src="/assets/images/skills/sql.png" alt="SQL" title="SQL">
+            </div>
+        </div>
       <div class="skill row">
           <div class="col-md-4 brd-right">
               <img src="/assets/images/skills/html_css_javascript.png" alt="HTML/CSS/JavaScript" title="HTML/CSS/JavaScript">
@@ -115,6 +122,33 @@
               GO
           </div>
       </div> -->
+    </div>
+
+    <!-- Part 3: Hire Me -->
+
+
+    <div class="hireme jumbotron">
+        <a name="hireme"></a>
+        <div style="height:50px;"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Work with Me?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p>I'm a contract/freelance web developer. If you're looking for xyz,
+                        then <a href="">get in touch</a>!
+                        I'm always looking for abc.
+                    </p>
+                    <p>Click <a href="">here</a> to download my Resume.
+                    <div>
+                        <button class="btn btn-primary">Hire Me</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!-- Part 3: Portfolio -->
@@ -181,17 +215,24 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-3">
 
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
             </div>
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-3">
-
-            </div>
-            <div class="col-md-3">
-
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    &copy; Olivia Rose Graham 2016
+                </div>
             </div>
         </div>
     </footer>

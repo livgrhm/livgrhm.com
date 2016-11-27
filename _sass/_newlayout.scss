@@ -78,8 +78,6 @@ nav {
     background-size: 100% auto;
 
     .container {
-        // height: 45rem;
-        //height: 100vh;
         position: relative;
 
         .header-content {
@@ -97,8 +95,18 @@ nav {
     ul {
         list-style: none;
 
-        .social-svg {
-            // fill: red;
+        li {
+            display: inline;
+            margin-left: 20px;
+
+            a {
+                font-size: 38px;
+                color: #333333;
+            }
+
+            a:hover {
+                color: #F2D8AC;
+            }
         }
     }
 }
@@ -157,23 +165,34 @@ nav {
 
     .skill.row {
 
-        .brd-btm {
-            border-bottom: 1px solid RGBA(247, 215, 166, 1.00);
-        }
-
-        .brd-right {
-            border-right: 1px solid RGBA(247, 215, 166, 1.00);
-        }
-
+        border-bottom: 1px solid RGBA(247, 215, 166, 1.00);
 
         div[class^="col-"] {
             height: 15rem;
-            // border: 1px solid RGBA(247, 215, 166, 1.0);
+            border-right: 1px solid RGBA(247, 215, 166, 1.00);
+            position: relative;
+
+            .skills-hover {
+                cursor: pointer;
+                display: none;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                background-color: RGBA(247, 215, 166, 0.95);
+                color: #5D5D5D;
+                left: 0;
+                top: 0;
+
+                span {
+                    padding: 20px;
+                    text-align: center;
+                    display: block;
+                }
+            }
         }
 
-        div[class^="col-"]:hover {
-            background-color: RGBA(247, 215, 166, 0.6);
-            cursor: pointer;
+        div[class^="col-"]:nth-child(3n+3) {
+            border-right: none;
         }
 
         img {
@@ -182,13 +201,25 @@ nav {
             padding-top:5rem;
         }
     }
+
+    .skill.row:nth-child(even) {
+        border-bottom: none;
+    }
+}
+
+/*--------------
+  Hire Me
+  -------------- */
+.hireme.jumbotron {
+    background-color: RGBA(184, 168, 155, 0.6);
+    margin-bottom: 0!important;
 }
 
 /*--------------
   Portfolio
   -------------- */
 .portfolio.jumbotron {
-    background-color: RGBA(184, 168, 155, 0.6);
+    background-color: #FFFFFF;
     margin-bottom: 0!important;
 }
 
@@ -197,15 +228,19 @@ nav {
   Blog
   -------------- */
 .blog.jumbotron {
-    background-color: #FFFFFF;
+    background-color: RGBA(184, 168, 155, 0.6);
     margin-bottom: 0!important;
+
+    .container {
+        height: auto!important;
+    }
 }
 
 /*--------------
   Instagram Feed
   -------------- */
 .instagram.jumbotron {
-    background-color: RGBA(184, 168, 155, 0.6);
+    background-color: #FFFFFF;
     margin-bottom: 0!important;
 
     #instafeed {
@@ -248,13 +283,19 @@ nav {
   Map
   -------------- */
 .map.jumbotron {
-    background-color: #FFFFFF;
+    background-color: RGBA(184, 168, 155, 0.6);
     margin-bottom: 0!important;
+    padding: 0!important;
+
+    #map {
+        height: 300px;
+        width: 100%;
+    }
 }
 
 /*--------------
   Footer
   -------------- */
 footer {
-    
+
 }

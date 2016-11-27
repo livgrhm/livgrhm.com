@@ -11,7 +11,7 @@ ruby RUBY_VERSION
 # Happy Jekylling!
 gem "jekyll", "3.2.1"
 
-gem "minima"
+# gem "minima"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
@@ -22,4 +22,5 @@ gem "minima"
 #   gem "jekyll-github-metadata", "~> 1.0"
 # end
 
+gem 'jekyll-paginate'
 gem 'jekyll-seo-tag'

@@ -1,0 +1,22 @@
+<!-- Part 3: Portfolio -->
+<div class="portfolio jumbotron">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>Experience/Portfolio</h2>
+			</div>
+		</div>
+		<div class="row">
+			{% for project in site.data.portfolio %}
+			<div class="col-md-{{ project.column }}">
+				<h2>{{ project.title }}</h2>
+				<p>{{ project.desc }}</p>
+			</div>
+			{% endfor %}
+			{% if skill.column.newrow == true %}
+				</div>
+				<div class="row">
+			{% endif %}
+		</div>
+	</div>
+</div>

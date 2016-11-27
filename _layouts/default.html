@@ -1,5 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
 {% include head.html %}
 <body>
   <div class="content-container">
@@ -7,5 +10,18 @@
 
     {% include footer.html %}
   </div>
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+  <script src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/instafeed.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+  <!-- <script src="assets/js/library/jqcloud.min.js"></script> -->
+  <script src="/assets/js/index.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key={{ site.google-maps.api-key }}&callback=initMap">
+  </script>
 </body>
 </html>
