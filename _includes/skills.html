@@ -1,28 +1,32 @@
-<!-- PART 2: Skills -->
-<div style="height:50px;"></div>
-<a name="skills"></a>
-<div class="container skills">
-	<div style="height:50px;"></div>
-	<div class="row">
-		<div class="col-md-12">
-			<h2>Skills</h2>
-		</div>
-	</div>
-	<div class="skill row">
-	{% for skill in site.data.skills %}
-		<div class="col-md-{{ skill.column }} skills-item">
-			<img src="{{ skill.image }}" alt="{{ skill.name }}" title="{{ skill.name }}">
-			<div id="" class="skills-hover">
-				<span>
-					<h2>{{ skill.name }}</h2>
-					<p>{{ skill.desc }}</p>
-				</span>
+<!-- Skills -->
+<a id="skills"></a>
+<div class="spacer s1"></div>
+<div class="slide jumbotron skills">
+	<div class="container">
+		<div class="row">
+			<!-- <div class="col-md-12">
+				<h2>Skills</h2>
+			</div> -->
+			<div id="skillsTitle" class="col-md-12">
+				<h2>Skills</h2>
 			</div>
 		</div>
-		{% if skill.newrow == 'true' %}
+		<div class="skill row">
+		{% for skill in site.data.skills %}
+			<div class="col-md-{{ skill.column }} skills-item {{ skill.brd-btm }}">
+				<img src="{{ skill.image }}" alt="{{ skill.name }}" title="{{ skill.name }}">
+				<div class="skills-hover">
+					<span>
+						<h2>{{ skill.name }}</h2>
+						<p>{{ skill.desc }}</p>
+					</span>
+				</div>
 			</div>
-			<div class="skill row">
-		{% endif %}
-	{% endfor %}
+			{% if skill.newrow == 'true' %}
+				</div>
+				<div class="skill row">
+			{% endif %}
+		{% endfor %}
+		</div>
 	</div>
 </div>

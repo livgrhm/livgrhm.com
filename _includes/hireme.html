@@ -1,21 +1,25 @@
-<div class="hireme jumbotron">
-	<a name="hireme"></a>
-	<div style="height:50px;"></div>
+<!-- Hire Me -->
+<a id="hireme"></a>
+<div class="spacer s1"></div>
+<div class="slide hireme jumbotron">
 	<div class="container">
 		<div class="row">
-			<div class="col-md-12">
+			<!-- <div class="col-md-12">
 				<h2>Work with Me?</h2>
+			</div> -->
+			<div id="hiremeTitle" class="col-md-12">
+				<h2>Work with Me</h2>
 			</div>
 		</div>
 		<div class="row">
 			<div class="col-md-12">
-				<p>I'm a contract/freelance web developer. If you're looking for xyz,
-					then <a href="">get in touch</a>!
-					I'm always looking for abc.
-				</p>
-				<p>Click <a href="">here</a> to download my Resume.
+				{% for item in site.data.workwithme %}
+				<p>{{ item.paragraph }}</p>
+				{% endfor %}
 				<div>
-					<button class="btn btn-primary">Hire Me</button>
+					<a href="{{ site.resumeurl }}" target="_blank">
+						<button class="btn btn-primary">Download my CV</button>
+					</a>
 				</div>
 			</div>
 		</div>

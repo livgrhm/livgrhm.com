@@ -15,7 +15,76 @@ function initMap() {
 	});
 };
 
+function initScroll() {
+	// init
+	var controller = new ScrollMagic.Controller({
+		globalSceneOptions: {
+			triggerHook: 'onLeave'
+		}
+	});
+
+	// get all slides
+	var slides = document.querySelectorAll(".slide");
+
+	// create scene for every slide
+	for (var i=0; i<slides.length; i++) {
+		new ScrollMagic.Scene({
+				triggerElement: slides[i]
+			})
+			.setPin(slides[i])
+			.addIndicators() // add indicators (requires plugin)
+			.addTo(controller);
+	}
+};
+
+function initAnchor() {
+	// init controller
+	var controller = new ScrollMagic.Controller();
+
+	var tween = TweenMax.from("#skillsTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#skills", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	var tween = TweenMax.from("#hiremeTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#hireme", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	var tween = TweenMax.from("#blogTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#blog", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	// change behaviour of controller to animate scroll instead of jump
+	controller.scrollTo( function (newpos) {
+		TweenMax.to(window, 0.5, {scrollTo: {y: newpos}});
+	});
+
+	//  bind scroll to anchor links
+	$(document).on("click", "a[href^='#']", function (e) {
+		var id = $(this).attr("href");
+		if ($(id).length > 0) {
+			e.preventDefault();
+
+			// trigger scroll
+			controller.scrollTo(id);
+
+			// if supported by the browser we can even update the URL.
+			// if (window.history && window.history.pushState) {
+			// 	history.pushState("", document.title, id);
+			// }
+		}
+	});
+}
+
 $( document ).ready(function() {
+	// initScroll();
+	initAnchor();
+
 	var feed = new Instafeed({
 		get: 'user',
 		userId: 3953160061,

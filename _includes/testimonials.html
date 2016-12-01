@@ -1,0 +1,34 @@
+<!-- Testimonials -->
+<a name="testimonials"></a>
+<div class="slide testimonials jumbotron">
+	<div class="container" style="padding-bottom:10px;">
+		<div class="row">
+			<div class="col-md-4 text-center">
+				<h2 style="margin-bottom:19px;">Get in Contact</h2>
+				<h4>Interested in working with me?</h4>
+				<div style="margin-bottom: 10px;"><button class="btn btn-primary">Send me a Request</button></div>
+				<div>
+					<p>I'm a contract/freelance web developer. If you're looking for xyz, then get in touch! I'm always looking for abc.</p>
+					<p>Click here to download my Resume.</p>
+					<p>M: +44(0)7791 384 388</p>
+					<p>E: livgrhm@gmail.com</p>
+				</div>
+			</div>
+
+			<div class="col-md-4 text-center">
+				<h2>Testimonials</h2>
+				<div class="testimonials">
+				{% for recom in site.data.recommendations %}
+					<div>
+						<h4><a href="{{ recom.url }}">{{ recom.name }}</a> {{ recom.position }}</h4>
+						<p style="font-size:13px;">&quot;{{ recom.desc }}&quot;</p>
+					</div>
+			    {% endfor %}
+				</div>
+			</div>
+			<div class="col-md-4 text-center" style="margin-top:20px;">
+				<img src="/assets/images/liv_sq.jpg" style="height:300px;margin:0 auto;">
+			</div>
+		</div>
+	</div>
+</div>

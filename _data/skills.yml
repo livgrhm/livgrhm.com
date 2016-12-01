@@ -1,0 +1,49 @@
+- skill:		"php"
+  image:		"/assets/images/skills/php.png"
+  name:			"PHP"
+  desc:			"Zend Framework 1, Wordpress, CodeIgniter"
+  column:		4
+  newrow:		false
+  brd-btm:      "brd-btm"
+- skill:		"java"
+  image:		"/assets/images/skills/java.png"
+  name:			"Java"
+  desc:			"Dropwizard, Android SDK"
+  column:		4
+  newrow:		false
+  brd-btm:      "brd-btm"
+- skill:		"sql"
+  image:		"/assets/images/skills/sql.png"
+  name:			"SQL"
+  desc:			"MS Server SQL (TSQL), MySQL"
+  column:		4
+  newrow:		true
+  brd-btm:      "brd-btm"
+- skill:		"web"
+  image:		"/assets/images/skills/html_css_javascript.png"
+  name:			"HTML/CSS/JS"
+  desc:			"HTML5, CSS3, JQuery, AngularJS, Bootstrap 3"
+  column:		4
+  newrow:		false
+  brd-btm:      ""
+- skill:		"bootstrap"
+  image:		"/assets/images/skills/bootstrap.png"
+  name:			"Bootstrap 3"
+  desc:			"Bootstrap 3"
+  column:		4
+  newrow:		false
+  brd-btm:      ""
+- skill:		"ionic"
+  image:		"/assets/images/skills/ionic.png"
+  name:			"Ionic 2"
+  desc:			"Ionic V2 (Cross-Platform Native Mobile Apps)"
+  column:		4
+  newrow:		true
+  brd-btm:      ""
+
+# Angular - angular 1 & 2
+# Agile -
+# Unix -
+# Product management -
+# Python
+# GO

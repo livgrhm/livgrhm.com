@@ -1,7 +1,0 @@
-skill,image,name,desc,column,newrow
-php,/assets/images/skills/php.png,PHP,I have done PHP for 4 years,4,false
-java,/assets/images/skills/java.png,Java,I have done Java for 4 years,4, false
-sql,/assets/images/skills/sql.png,SQL,I have done SQL for 4 years,4,true
-web,/assets/images/skills/html_css_javascript.png,HTML/CSS/JS,I have done HTML/CSS/JS for 4 years,4,false
-bootstrap,/assets/images/skills/bootstrap.png,Bootstrap 3,I have done Bootstrap 3 for 4 years,4,false
-ionic,/assets/images/skills/ionic.png,Ionic 2,I have done Ionic 2 for 4 years,4,false

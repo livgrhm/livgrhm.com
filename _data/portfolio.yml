@@ -1,0 +1,15 @@
+- title:		"Project 1"
+  image:		""
+  url:			"http://github.com/livgrhm/"
+  desc:			"Some desc here"
+  column:		4
+- title:		"Project 2"
+  image:		""
+  url:			"http://github.com/livgrhm/"
+  desc:			"Some desc here"
+  column:		4
+- title:		"Project 3"
+  image:		""
+  url:			"http://github.com/livgrhm/"
+  desc:			"Some desc here"
+  column:		4
