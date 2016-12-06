@@ -163,6 +163,7 @@ nav {
 
     ul {
         list-style: none;
+        margin-bottom: 0;
 
         li {
             display: inline;
@@ -170,7 +171,7 @@ nav {
 
             a {
                 font-size: 38px;
-                color: #333333;
+                color: #534F4C;
             }
 
             a:hover {
@@ -181,7 +182,7 @@ nav {
 }
 
 /* Extra large display */
-@media screen and (min-width: 1280px){
+@media screen and (min-width: 1280px) {
     .header.jumbotron {
         .container {
             height: 30rem;
@@ -193,7 +194,7 @@ nav {
 @media screen and (min-width: 1024px) and (max-width: 1280px) {
     .header.jumbotron {
         .container {
-            height: 48rem;
+            height: 23rem;
         }
     }
 }
@@ -202,7 +203,24 @@ nav {
 @media screen and (min-width: 980px) and (max-width: 1024px) {
     .header.jumbotron {
         .container {
-            height: 45rem;
+            height: 21rem;
+
+            .header-content {
+                width: 12rem;
+
+                h1 {
+                    font-size: 52px;
+                }
+
+                p {
+                    font-size: 18px;
+                }
+            }
+
+            .social-links ul li a {
+                color: #514F4C;
+                font-size: 28px;
+            }
         }
     }
 }
@@ -211,17 +229,89 @@ nav {
 @media screen and (min-width: 760px) and (max-width: 980px){
     .header.jumbotron {
         .container {
-            height: 38rem;
+            height: 18rem;
+
+            .header-content {
+                width: 10rem;
+
+                h1 {
+                    font-size: 46px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .social-links ul li a {
+                color: #514F4C;
+                font-size: 28px;
+            }
         }
     }
 }
 
-
 /* Mobile HD */
-@media screen and (min-width: 350px) and (max-width: 760px){
+@media screen and (min-width: 350px) and (max-width: 760px) {
+
     .header.jumbotron {
+
+        background-size: 150% auto;
+        background-position-x: -9rem;
+
         .container {
-            height: 28rem;
+            height: 15rem;
+
+            .header-content {
+                width: 9rem;
+
+                h1 {
+                    font-size: 38px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .social-links {
+                right: 20px;
+            }
+
+            .social-links ul li a {
+                color: #514F4C;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header.jumbotron {
+
+        background-size: 150% auto;
+        background-position-x: -9rem;
+
+        .container {
+
+            height: 15rem;
+
+            .header-content {
+                width: 10rem;
+
+                h1 {
+                    font-size: 46px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+
+            .social-links ul li a {
+                color: #514F4C;
+                font-size: 28px;
+            }
         }
     }
 }
