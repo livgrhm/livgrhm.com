@@ -472,6 +472,17 @@ nav {
   -------------- */
 footer {
     background-color: $jumbotron-bg;
+    color: #FFFFFF;
+    padding: 10px 0;
+
+    .footer-copy {
+        font-family: $nav-font;
+        font-size: 14px;
+
+        .fa {
+            font-size: 18px;
+        }
+    }
 }
 
 
