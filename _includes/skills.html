@@ -12,21 +12,22 @@
 			</div>
 		</div>
 		<div class="skill row">
-		{% for skill in site.data.skills %}
-			<div class="col-md-{{ skill.column }} skills-item {{ skill.brd-btm }}">
-				<img src="{{ skill.image }}" alt="{{ skill.name }}" title="{{ skill.name }}">
-				<div class="skills-hover">
-					<span>
-						<h2>{{ skill.name }}</h2>
-						<p>{{ skill.desc }}</p>
-					</span>
+			{% for skill in site.data.skills %}
+				<div class="col-md-{{ skill.column }} skills-item {{ skill.brd-btm }}">
+					<img src="{{ skill.image }}" alt="{{ skill.name }}" title="{{ skill.name }}">
+					<div class="skills-hover">
+						<span>
+							<h2>{{ skill.name }}</h2>
+							<p>{{ skill.desc }}</p>
+						</span>
+					</div>
 				</div>
-			</div>
-			{% if skill.newrow == 'true' %}
-				</div>
-				<div class="skill row">
-			{% endif %}
-		{% endfor %}
+				{% if skill.newrow == 'true' %}
+					</div>
+					<div class="skill row">
+				{% endif %}
+			{% endfor %}
+			<div class="clearfix"></div>
 		</div>
 	</div>
 </div>

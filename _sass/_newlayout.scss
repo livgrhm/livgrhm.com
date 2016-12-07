@@ -320,7 +320,7 @@ nav {
   Skills
   -------------- */
 .jumbotron.skills {
-    padding-bottom: 40px;
+    padding-bottom: 60px;
     background-color: $jumbotron-bg-light;
 
     .skill.row {
@@ -332,7 +332,8 @@ nav {
         div[class^="col-"] {
             height: 7.3rem;
             border-right: 1px solid RGBA(247, 215, 166, 1.00);
-            position: relative;
+            white-space: nowrap;
+            text-align: center;
 
             .skills-hover {
                 display: none;
@@ -345,7 +346,7 @@ nav {
                 top: 0;
 
                 span {
-                    padding: 20px;
+                    padding: 35px 30px 25px 30px;
                     text-align: center;
                     display: block;
                 }
@@ -357,9 +358,10 @@ nav {
         }
 
         img {
-            height: 9rem;
+            max-height: 3.3rem;
             margin: 0 auto;
-            padding-top: 3.8rem;
+            vertical-align: middle;
+            margin-top: 2.3rem;
         }
     }
 
