@@ -76,20 +76,38 @@ function initAnchor() {
 	// init controller
 	var controller = new ScrollMagic.Controller();
 
-	var tween = TweenMax.from("#skillsTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var tween = TweenMax.from("#skillsTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#skills", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
-	var tween = TweenMax.from("#hiremeTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var tween = TweenMax.from("#hiremeTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#hireme", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
-	var tween = TweenMax.from("#blogTitle", 0.5, {autoAlpha: 0, scale: 0.7});
+	var tween = TweenMax.from("#portfolioTween", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#portfolio", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	var tween = TweenMax.from("#blogTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#blog", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	var tween = TweenMax.from("#instagramTween", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#instagram", duration: 400, triggerHook: "onEnter"})
+					.setTween(tween)
+					.addIndicators() // add indicators (requires plugin)
+					.addTo(controller);
+
+	var tween = TweenMax.from("#testimonialsTween", 0.5, {autoAlpha: 0, scale: 0.7});
+	var scene = new ScrollMagic.Scene({triggerElement: "a#contact", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
 					.addIndicators() // add indicators (requires plugin)
 					.addTo(controller);

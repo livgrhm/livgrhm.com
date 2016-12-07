@@ -28,22 +28,26 @@ $nav-font: "Libre Franklin", Helvetica, Arial, sans-serif;
 $code-font: Menlo, Monaco, monospace;
 $code-gist-font: Menlo, Monaco, "Courier New", monospace !important;
 
+/*--------------
+  Font Sizes
+  -------------- */
 
 /*--------------
   Color
   -------------- */
-$base-color: rgba(#333,0.8);
-$base-lighten-color: lighten($base-color, 50);
+$base-color: RGBA(184, 168, 155, 1.0);
+$base-lighten-color: #FFFFFF;
+$background-over-color: RGBA(184, 168, 155, 0.8);
 
-$background-color: #fff;
-$background-over-color: #f5f7f9;
+$text-color: #5D5D5D;
+$heading-color: #5D5D5D;
+$nav-color: #5D5D5D;
+// $text-lighten-color: lighten($base-color, 50);
 
-$text-color: #333;
+
+
 $link-color: #268bd2;
 $code-color: #bf616a;
 $code-background-color: #f9f9f9;
 $table-border-color: #e5e5e5;
 $table-background-color: #f9f9f9;
-
-$jumbotron-bg-light: #FFFFFF;
-$jumbotron-bg: RGBA(184, 168, 155, 1.0);

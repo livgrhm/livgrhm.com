@@ -2,7 +2,7 @@
 layout: post
 title: "A Full and Comprehensive Style Test"
 description: "Test post for style"
-image: "https://cdn.pixabay.com/photo/2014/11/19/17/41/child-538029_1280.jpg"
+image: "http://weknowyourdreams.com/images/dog/dog-01.jpg"
 date: 2016-08-15
 tags: [test, style]
 comments: true
