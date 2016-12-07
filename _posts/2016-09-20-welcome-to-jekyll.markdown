@@ -1,6 +1,7 @@
 ---
 layout: post
 title:  "Welcome to Jekyll!"
+image: "https://cdn.pixabay.com/photo/2014/11/19/17/41/child-538029_1280.jpg"
 date:   2016-09-20 15:36:16 +0100
 categories: jekyll update
 ---

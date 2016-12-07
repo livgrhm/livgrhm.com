@@ -2,6 +2,7 @@
 layout: post
 title: "Syntax Highlighting Post"
 description: "Demo post displaying the various ways of highlighting code in Markdown."
+image: "https://cdn.pixabay.com/photo/2014/11/19/17/41/child-538029_1280.jpg"
 date: 2013-08-16
 tags: [sample post, code, highlighting]
 comments: true

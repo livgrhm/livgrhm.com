@@ -66,9 +66,15 @@ nav:
     url:            "#skills"
   - name:           "Hire Me"
     url:            "#hireme"
+  - name:           "Portfolio"
+    url:            "#portfolio"
   - name:           "Blog"
     # url:            "/blog"
     url:            "#blog"
+  - name:           "Instagram"
+    url:            "#instagram"
+  - name:           "Contact"
+    url:            "#contact"
 
 # Sass
 sass:

@@ -5,15 +5,12 @@
 	<div class="container">
 
 		<div class="row">
-			<!-- <div class="col-md-12">
-				<h2>Blog</h2>
-			</div> -->
 			<div id="blogTitle" class="col-md-12">
 				<h2>Blog</h2>
 			</div>
 		</div>
 
-		<div class="row">
+		<div class="row blog-tiles">
 
 			{% if site.posts.size == 0 %}
 			<div class="col-md-12">
@@ -22,17 +19,31 @@
 			{% else %}
 
 				{% for post in site.posts %}
-					<div class="col-md-4 blog-post">
-						{% if post.link %}
-							<a href="{{ post.link }}">
-						{% else %}
-							<a href="{{ post.url | prepend: site.baseurl }}">
-						{% endif %}
-							<h3>{{ post.title }}</h3>
-							<p>{{ post.description }}</p>
-							<span>By {{ post.author }}</span>
-							<time>{{ post.date | date_to_string }}</time>
-						</a>
+					<div class="col-sm-12 col-md-4 blog-item">
+						<div class="blog-post-img">
+							{% if post.link %}
+								<a href="{{ post.link }}">
+							{% else %}
+								<a href="{{ post.url | prepend: site.baseurl }}">
+							{% endif %}
+								<img src="{{ post.image }}" title="" alt="" />
+							</a>
+						</div>
+						<div class="blog-post">
+							{% if post.link %}
+								<a href="{{ post.link }}">
+							{% else %}
+								<a href="{{ post.url | prepend: site.baseurl }}">
+							{% endif %}
+								<time>{{ post.date | date: "%B %-d, %Y" }}</time>
+								<span class="h3">{{ post.title }}</span>
+								<span class="spacer"></span>
+								<p>{{ post.description }}</p>
+								{% if post.author %}
+								<span>By {{ post.author }}</span>
+								{% endif %}
+							</a>
+						</div>
 					</div>
 				{% endfor %}
 
