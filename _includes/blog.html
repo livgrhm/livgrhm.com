@@ -37,7 +37,7 @@
 								<time>{{ post.date | date: "%B %-d, %Y" }}</time>
 								<span class="h3">{{ post.title }}</span>
 								<span class="spacer"></span>
-								<p>{{ post.description }}</p>
+								{{ post.excerpt }}
 								{% if post.author %}
 								<span>By {{ post.author }}</span>
 								{% endif %}
