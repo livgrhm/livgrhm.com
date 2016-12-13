@@ -9,7 +9,7 @@
 		</div>
 		<div class="skill row">
 			{% for skill in site.data.skills %}
-				<div class="col-md-{{ skill.column }} skills-item {{ skill.brd-btm }}">
+				<div class="col-sm-{{ skill.column }} skills-item {{ skill.brd-btm }}">
 					<img src="{{ skill.image }}" alt="{{ skill.name }}" title="{{ skill.name }}">
 					<div class="skills-hover">
 						<span>
@@ -23,7 +23,7 @@
 					<div class="skill row">
 				{% endif %}
 			{% endfor %}
-			<div class="clearfix"></div>
+			<!-- <div class="clearfix"></div> -->
 		</div>
 	</div>
 </div>

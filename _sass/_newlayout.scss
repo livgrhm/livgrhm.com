@@ -21,6 +21,11 @@ body {
     background-color: $base-color;
 }
 
+// xs = width < 768px
+// sm = width ≥ 768px
+// md = width ≥ 992px
+// lg = width ≥ 1200px
+
 /*--------------
   Nav
   -------------- */
@@ -313,9 +318,9 @@ nav {
         }
 
         div[class^="col-"] {
-            height: 7.3rem;
+            height: 9.5rem;
             border-right: 1px solid RGBA(247, 215, 166, 1.00);
-            white-space: nowrap;
+            // white-space: nowrap;
             text-align: center;
 
             .skills-hover {
@@ -345,7 +350,7 @@ nav {
         }
 
         img {
-            max-height: 3.3rem;
+            max-height: 4.5rem;
             margin: 0 auto;
             vertical-align: middle;
             margin-top: 2.3rem;
@@ -356,6 +361,30 @@ nav {
         border-bottom: none;
     }
 }
+
+@media screen and (max-width: 768px) {
+
+    .jumbotron.skills .skill.row {
+
+        img {
+            top: 2.3rem;
+            position: relative;
+            margin-top: 0;
+        }
+
+        .skills-item {
+            border: none;
+            border-bottom: 1px solid RGBA(247, 215, 166, 1.00);
+        }
+
+        div.skills-item:last-of-type {
+            border-bottom: none;
+        }
+    }
+
+
+}
+
 
 /*--------------
   Hire Me
