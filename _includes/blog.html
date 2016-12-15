@@ -18,7 +18,7 @@
 			{% else %}
 
 				{% for post in site.posts %}
-					<div class="col-sm-12 col-md-4 blog-item">
+					<div class="col-xs-12 col-sm-4 blog-item">
 						<div class="blog-post-img">
 							{% if post.link %}
 								<a href="{{ post.link }}">
@@ -37,7 +37,7 @@
 								<time>{{ post.date | date: "%B %-d, %Y" }}</time>
 								<span class="h3">{{ post.title }}</span>
 								<span class="spacer"></span>
-								{{ post.excerpt }}
+								{{ post.description }}
 								{% if post.author %}
 								<span>By {{ post.author }}</span>
 								{% endif %}

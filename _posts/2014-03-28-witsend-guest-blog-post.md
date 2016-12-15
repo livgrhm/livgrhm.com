@@ -2,7 +2,7 @@
 layout: post
 title: "Guest Blog Post for WITsend on ComputerWeekly.com"
 description: "A guest blog post for the WITsend blog on ComputerWeekly.com - About my experiences being a woman in tech & in particular the gender gap in Computer Science."
-image: "http://weknowyourdreams.com/images/dog/dog-01.jpg"
+image: "https://dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
 date: 2014-03-28
 tags: [women in tech, computer weekly, tech]
 author: "Olivia Graham"

@@ -1,35 +1,16 @@
 <!-- Testimonials -->
 <a id="contact"></a>
 <div class="testimonials jumbotron dark">
-	<div id="testimonialsTween" class="container" style="padding-bottom:10px;">
+	<div id="testimonialsTween" class="container">
 		<div class="row">
 			<div class="col-md-4 text-center">
-				<h2 style="margin-bottom:19px;">Get in Contact</h2>
+				<h2>Get in Contact</h2>
 				<h4>Interested in working with me?</h4>
-				<div style="margin-bottom: 10px;"><button class="btn btn-primary">Send me a Request</button></div>
-				<div>
-					<p>I'm a contract/freelance web developer. If you're looking for xyz, then get in touch! I'm always looking for abc.</p>
-					<p>Click here to download my Resume.</p>
-					<p>M: +44(0)7791 384 388</p>
-					<p>E: livgrhm@gmail.com</p>
+				<div class="contact">
+					<p>I'm currently working on a freelance/contract basis. If you're interested in working with me, or just want to talk then reach out!</p>
+					<p><a href="{{ site.resumeurl }}" target="_blank">Click here</a> to download my Resume, or</p>
+					<a href="mailto:{{ site.author.email }}"><button class="btn btn-primary btn-request">Send me a Request</button></a>
 				</div>
-				<!-- <div class="footer-link">
-					{% if site.author.email %}
-					<a href="mailto://{{ site.author.email }}" title="Email Me"><i class="fa fa-mail-reply" aria-hidden="true" alt="Email"></i></a>
-					{% endif %}
-
-					{% if site.author.linkedin %}
-					<a target="_blank" href="https://uk.linkedin.com/in/{{ site.author.linkedin }}" title="Check out my LinkedIn"><i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i></a>
-					{% endif %}
-
-					{% if site.author.github %}
-					<a target="_blank" href="https://github.com/{{ site.author.github }}" title="Check out my GitHub"><i class="fa fa-github" aria-hidden="true" alt="GitHub"></i></a>
-					{% endif %}
-
-					{% if site.author.twitter %}
-					<a target="_blank" href="https://twitter.com/{{ site.author.twitter }}" title="Follow me on Twitter"><i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i></a>
-					{% endif %}
-				</div> -->
 			</div>
 
 			<div class="col-md-4 text-center">
@@ -37,14 +18,14 @@
 				<div class="testimonials">
 				{% for recom in site.data.recommendations %}
 					<div>
-						<h4><a href="{{ recom.url }}">{{ recom.name }}</a> {{ recom.position }}</h4>
+						<h4><a href="{{ recom.url }}" target="_blank">{{ recom.name }}</a> {{ recom.position }}</h4>
 						<p style="font-size:13px;">&quot;{{ recom.desc }}&quot;</p>
 					</div>
 			    {% endfor %}
 				</div>
 			</div>
-			<div class="col-md-4 text-center" style="margin-top:20px;">
-				<img src="/assets/images/liv_sq.jpg" style="height:300px;margin:0 auto;">
+			<div class="col-md-4 text-center liv-sq">
+				<img src="/assets/images/liv_sq.jpg">
 			</div>
 		</div>
 	</div>

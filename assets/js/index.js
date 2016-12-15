@@ -44,16 +44,6 @@ function initMasonry() {
 	  // options
 	  itemSelector: '.blog-item'
 	});
-
-	$('.blog-item').each( function (i, e) {
-		$(e).hover(
-			function () {
-				$(e).addClass('shadow');
-			}, function () {
-				$(e).removeClass('shadow');
-			}
-		);
-	});
 }
 
 function initMap() {
@@ -148,5 +138,14 @@ $( document ).ready(function() {
 	initSlick();
 
 	// Initialise masonry
-	initMasonry();
+	//initMasonry();
+	$('.blog-item').each( function (i, e) {
+		$(e).hover(
+			function () {
+				$(e).addClass('shadow');
+			}, function () {
+				$(e).removeClass('shadow');
+			}
+		);
+	});
 });

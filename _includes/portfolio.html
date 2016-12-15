@@ -4,14 +4,22 @@
 	<div id="portfolioTween" class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h2>Experience/Portfolio</h2>
+				<h2>Portfolio</h2>
 			</div>
 		</div>
 		<div class="row">
 			{% for project in site.data.portfolio %}
-			<div class="col-md-{{ project.column }}">
-				<h2>{{ project.title }}</h2>
-				<p>{{ project.desc }}</p>
+			<div class="col-xs-12 col-sm-{{ project.column }} portfolio-tile">
+				<a href="{{ project.url }}" target="_blank">
+					<span class="portfolio-tile-head" style="background-color:{{ project.color1 }}; display:block;text-align:center;height:5em;">
+						<i class="fa fa-{{ project.icon }}" aria-hidden="true" style="font-size:3em;margin-top:10px;"></i>
+					</span>
+					<span class="portfolio-tile-bottom" style="background-color:{{ project.color2 }}; display:block;text-align:center;padding: 20px;">
+						<h2>{{ project.title }}</h2>
+						<h5><i>{{ project.subtitle }}</i></h5>
+						<p style="font-size:14px;">{{ project.desc }}</p>
+					</span>
+				</a>
 			</div>
 			{% endfor %}
 			{% if skill.column.newrow == true %}

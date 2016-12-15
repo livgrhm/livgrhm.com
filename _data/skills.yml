@@ -7,7 +7,7 @@
   brd-btm:      "brd-btm"
 - skill:		"java"
   image:		"/assets/images/skills/java.png"
-  name:			"Java"
+  name:			"Java 8"
   desc:			"Dropwizard, Android SDK"
   column:		4
   newrow:		false
@@ -22,7 +22,7 @@
 - skill:		"web"
   image:		"/assets/images/skills/html_css_javascript.png"
   name:			"HTML/CSS/JS"
-  desc:			"HTML5, CSS3, JQuery, AngularJS, Bootstrap 3"
+  desc:			"HTML5, CSS3, JQuery, AngularJS 1&2, Bootstrap 3"
   column:		4
   newrow:		false
   brd-btm:      ""

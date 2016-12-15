@@ -394,6 +394,10 @@ nav {
 
     .container {
         height: auto!important;
+
+        p {
+            font-size: 16px;
+        }
     }
 }
 
@@ -402,6 +406,22 @@ nav {
   -------------- */
 .portfolio.jumbotron {
     margin-bottom: 0!important;
+
+    .container {
+
+        .portfolio-tile {
+
+
+            a {
+                color: #FFFFFF;
+                text-decoration: none;
+            }
+
+            h2, h5 {
+                color: #FFFFFF;
+            }
+        }
+    }
 }
 
 
@@ -412,7 +432,7 @@ nav {
     margin-bottom: 0!important;
 
     .container {
-        height: auto!important;
+        // height: auto!important;
     }
 
     .blog-item.shadow {
@@ -465,8 +485,8 @@ nav {
                 font-weight: 700;
                 display: block;
                 text-transform: uppercase;
-                margin: 15px 0;
-                max-width: 258px;
+                // margin: 15px 0;
+                // max-width: 258px;
                 word-wrap: break-word;
             }
 
@@ -537,8 +557,27 @@ nav {
   -------------- */
 .testimonials.jumbotron {
     margin-bottom: 0!important;
-    p {
-        font-size: 14px;
+
+    .container {
+        padding-bottom: 10px;
+
+        .btn-request {
+            display: block;
+            margin: 10px auto;
+        }
+
+        p {
+            font-size: 14px;
+        }
+
+        .liv-sq {
+            margin-top: 20px;
+
+            img {
+                height: 250px;
+                margin: 0 auto;
+            }
+        }
     }
 }
 
@@ -560,7 +599,7 @@ nav {
   -------------- */
 footer {
     background-color: $base-color;
-    color: #FFFFFF;
+    color: #FFFFFF!important;
     padding: 10px 0;
 
     .footer-copy {
