@@ -44,177 +44,6 @@
 }
 
 /*--------------
-  Media Screens
-  -------------- */
-/* Extra large display */
-@media screen and (min-width: 1280px) {
-    .header.jumbotron {
-
-        .container {
-            height: 86vh;
-        }
-
-        .header-content {
-            width: 23rem;
-
-            h1 {
-                font-size: 63px;
-            }
-
-            p {
-                font-size: 21px;
-            }
-        }
-    }
-
-    .blog.jumbotron .blog-item {
-        width: 30%!important;
-
-        .blog-post {
-            .h3 {
-                width: auto;
-            }
-        }
-    }
-}
-
-/* Retina display */
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
-    .header.jumbotron {
-
-        .container {
-            height: 63vh;
-        }
-
-        .header-content {
-            width: 23rem;
-
-            h1 {
-                font-size: 63px;
-            }
-
-            p {
-                font-size: 21px;
-            }
-        }
-    }
-}
-
-/* Desktop */
-@media screen and (min-width: 992px) and (max-width: 1024px) {
-    .header.jumbotron {
-
-        .container {
-            height: 63vh;
-        }
-
-        .header-content {
-            width: 19rem;
-
-            h1 {
-                font-size: 52px;
-            }
-
-            p {
-                font-size: 18px;
-            }
-        }
-
-        .social-links ul li a {
-            color: #514F4C;
-            font-size: 28px;
-        }
-    }
-}
-
-/* Tablet */
-@media screen and (min-width: 760px) and (max-width: 992px){
-    .header.jumbotron {
-
-        .container {
-            height: 46vh;
-        }
-
-        .header-content {
-            width: 15rem;
-
-            h1 {
-                font-size: 46px;
-            }
-
-            p {
-                font-size: 16px;
-            }
-        }
-
-        .social-links ul li a {
-            color: #514F4C;
-            font-size: 28px;
-        }
-    }
-}
-
-/* Mobile HD */
-@media screen and (min-width: 350px) and (max-width: 760px) {
-
-    .header.jumbotron {
-
-        background-size: 130% auto;
-        background-position-x: -9rem;
-
-        .container {
-            height: 30vh;
-
-            .header-content {
-                width: 15rem;
-
-                h1 {
-                    font-size: 38px;
-                }
-
-                p {
-                    font-size: 14px;
-                }
-            }
-
-            .social-links {
-                right: 20px;
-            }
-
-            .social-links ul li a {
-                color: #514F4C;
-                font-size: 28px;
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .header.jumbotron {
-
-        background-size: 150% auto;
-        background-position-x: -9rem;
-
-        .container {
-
-            height: 15rem;
-
-            .header-content {
-                width: 10rem;
-
-                h1 {
-                    font-size: 28px;
-                }
-
-                p {
-                    font-size: 12px;
-                }
-            }
-        }
-    }
-}
-
-/*--------------
   Skills
   -------------- */
 .jumbotron.skills {
@@ -321,6 +150,29 @@
 
         .portfolio-tile {
             min-height: 6em;
+            margin-bottom: 15px;
+
+            .portfolio-tile-head {
+                display: block;
+                text-align: center;
+                height: 5em;
+
+                i {
+                    font-size: 3em;
+                    margin-top: 10px;
+                }
+            }
+
+            .portfolio-tile-bottom {
+                display: block;
+                text-align: center;
+                padding: 20px;
+                min-height: 11em;
+
+                p {
+                    font-size: 14px;
+                }
+            }
 
             a {
                 color: #FFFFFF;
@@ -339,11 +191,7 @@
   Blog
   -------------- */
 .blog.jumbotron {
-    margin-bottom: 0!important;
-
-    .container {
-        // height: auto!important;
-    }
+    // margin-bottom: 0!important;
 
     .blog-item.shadow {
         -webkit-box-shadow: -8px 8px 38px 5px rgba(214,214,214,0.74);
@@ -352,7 +200,7 @@
     }
 
     .blog-item {
-
+        // margin-bottom: 15px;
         padding: 0;
         margin: 0 0.8rem;
         margin-bottom: 1.6rem;
@@ -531,6 +379,214 @@ footer {
 
         .fa {
             font-size: 18px;
+        }
+
+        div.hidden-xs {
+            display: inline-block;
+        }
+    }
+}
+
+/*--------------
+  Media Screens
+  -------------- */
+/* Extra large display */
+@media screen and (min-width: 1280px) {
+    .header.jumbotron {
+
+        .container {
+            height: 86vh;
+        }
+
+        .header-content {
+            width: 23rem;
+
+            h1 {
+                font-size: 63px;
+            }
+
+            p {
+                font-size: 21px;
+            }
+        }
+    }
+
+    .blog.jumbotron .blog-item {
+        width: 30%!important;
+
+        .blog-post {
+            .h3 {
+                width: auto;
+            }
+        }
+    }
+}
+
+/* Retina display */
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+    .header.jumbotron {
+
+        .container {
+            height: 63vh;
+        }
+
+        .header-content {
+            width: 23rem;
+
+            h1 {
+                font-size: 63px;
+            }
+
+            p {
+                font-size: 21px;
+            }
+        }
+    }
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) and (max-width: 1024px) {
+    .header.jumbotron {
+
+        .container {
+            height: 63vh;
+        }
+
+        .header-content {
+            width: 19rem;
+
+            h1 {
+                font-size: 52px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+        }
+
+        .social-links ul li a {
+            color: #514F4C;
+            font-size: 28px;
+        }
+    }
+}
+
+/* Tablet */
+@media screen and (min-width: 760px) and (max-width: 992px){
+    .header.jumbotron {
+
+        .container {
+            height: 46vh;
+        }
+
+        .header-content {
+            width: 15rem;
+
+            h1 {
+                font-size: 46px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .social-links ul li a {
+            color: #514F4C;
+            font-size: 28px;
+        }
+    }
+}
+
+/* Mobile HD */
+@media screen and (min-width: 350px) and (max-width: 760px) {
+
+    .header.jumbotron {
+
+        background-size: 130% auto;
+        background-position-x: -9rem;
+
+        .container {
+            height: 30vh;
+
+            .header-content {
+                width: 15rem;
+
+                h1 {
+                    font-size: 38px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+            }
+
+            .social-links {
+                right: 20px;
+            }
+
+            .social-links ul li a {
+                color: #514F4C;
+                font-size: 28px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .header.jumbotron {
+
+        background-size: 150% auto;
+        background-position-x: -9rem;
+        margin-top: 56px!important;
+
+        .container {
+
+            height: 15rem;
+
+            .header-content {
+                width: 10rem;
+
+                h1 {
+                    font-size: 28px;
+                }
+
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .jumbotron.skills {
+        padding: 20px 0 0 0;
+
+        .skill.row {
+            div[class^="col-"] {
+                border-right: none;
+            }
+        }
+    }
+
+    .blog.jumbotron {
+        margin-bottom: 0;
+    }
+
+    .testimonials.jumbotron {
+        .col-md-4 {
+            margin-bottom: 25px;
+        }
+        .liv-sq {
+            margin: 0;
+        }
+    }
+
+    .blog.jumbotron {
+        .blog-item {
+            margin: 0 0 15px 0;
+            padding: 0 15px;
+            // margin: 0 0.8rem;
+            // margin-bottom: 1.6rem;
         }
     }
 }

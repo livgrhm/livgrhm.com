@@ -42,9 +42,9 @@ disqus:
 
 # URL
 #production
-#url:                "http://livgrhm.com" # the base hostname & protocol for your site
+url:                "http://livgrhm.com" # the base hostname & protocol for your site
 #development
-url:               "localhost:4000"
+#url:               "localhost:4000"
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
