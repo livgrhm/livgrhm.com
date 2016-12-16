@@ -1,8 +1,8 @@
-Livgrhm.com V2
+Livgrhm.com V3
 ======
-Version: 2.0
+Version: 3.0
 ------
-Personal website V2 (2016) - built with Bootstrap 3 & Jekyll (and a bit of elbow grease).
+Personal website V3 (2016) - built with Bootstrap 3 & Jekyll (and a bit of elbow grease).
 
 ### Frameworks/Other
 * Jekyll - https://jekyllrb.com/
