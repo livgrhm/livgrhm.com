@@ -2,6 +2,7 @@
 layout: post
 title:  "Olivia Test Draft"
 date:   2016-09-20 15:36:16 +0100
+image: "https://dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
 categories: olivia tech
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.

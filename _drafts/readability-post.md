@@ -2,7 +2,7 @@
 layout: post
 title: "Testing Readability with a Bunch of Text"
 description: "A ton of text to test readability."
-image: "http://weknowyourdreams.com/images/dog/dog-01.jpg"
+image: "https://dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
 date: 2012-05-22
 tags: [sample post, readability, test, intro]
 author: "Olivia Graham"

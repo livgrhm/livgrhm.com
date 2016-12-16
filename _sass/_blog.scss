@@ -1,0 +1,191 @@
+/*--------------
+  Page
+  -------------- */
+.page {
+    &-title {
+        margin-bottom: 2rem;
+    }
+}
+
+/*--------------
+  Post
+  -------------- */
+.post-header.jumbotron {
+
+    background-color: RGBA(184, 168, 155, 1.00);
+    color: #FFFFFF!important;
+
+    .container {
+
+        .row {
+            padding-top:50px;
+
+            h1 {
+                color: #FFFFFF!important;
+            }
+        }
+
+        .social-links-blog {
+
+            ul {
+                list-style: none;
+                margin-bottom: 0;
+
+                li {
+                    display: inline;
+                    margin-left: 20px;
+
+                    a {
+                        font-size: 38px;
+                        color: #FFFFFF;
+
+                        &:hover {
+                            color: RGBA(93, 93, 93, 1.00);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.post {
+    background-color: #FFFFFF;
+
+    &-row {
+        min-height: 100vh;
+    }
+
+    h1 {
+        color: RGBA(93, 93, 93, 1.00);
+    }
+
+    &-date {
+        margin-bottom: .5rem;
+        color: RGBA(93, 93, 93, 1.00);
+        font-size: .75rem;
+        text-transform: uppercase;
+    }
+
+    &-tag {
+        margin-bottom: 1rem;
+
+        .tag {
+            display: inline-block;
+            margin: 4px;
+            margin-left: 0px;
+            color: #FFFFFF;
+            background-color: RGBA(93, 93, 93, 1.00);
+            text-decoration: none;
+            	border-radius: 3px;
+        }
+
+        li {
+            font-size: .75rem;
+            display: inline;
+            list-style-type: none;
+            text-transform: lowercase;
+        }
+
+        span {
+            float: left;
+        	padding: .5px 5px;
+        }
+    }
+
+    &-content {
+        font-size: 20px;
+        color: RGBA(93, 93, 93, 1.00);
+    }
+
+    &-share {
+        margin-bottom: 1rem;
+    }
+}
+
+/*--------------
+  Tags
+  -------------- */
+.tag {
+    &-index {
+        font-size: .75rem;
+        display: inline;
+        list-style-type: none;
+        text-transform: lowercase;
+
+        a {
+            display: inline-block;
+            margin: 1px 4px;
+            color: #fff;
+            background-color: $base-lighten-color;
+            border-radius: 3px;
+
+            span {
+                float: left;
+                padding: .5px 5px;
+            }
+            .count {
+                background-color: $base-lighten-color;
+                border-radius: 0 3px 3px 0;
+            }
+            &:hover {
+                background-color: $base-lighten-color;
+            }
+        }
+    }
+
+    &-title {
+        font-size: 1.4rem;
+        font-weight: 600;
+        text-transform: lowercase;
+        padding-top: 1rem;
+    }
+
+    &-post {
+        padding-left: .75rem;
+
+        a {
+    		color: $base-color;
+
+    		&:hover {
+                color: $base-color;
+                text-decoration: none;
+                background-color: $background-over-color;
+                border-color: transparent;
+            }
+    	}
+    }
+}
+
+/*--------------
+  Archive
+  -------------- */
+.archive {
+    &-list {
+        &-post {
+
+            a {
+                color: $base-color;
+
+                &:hover {
+                    color: $base-color;
+                    text-decoration: none;
+                    background-color: $background-over-color;
+                    border-color: transparent;
+                }
+            }
+
+
+            &-title {
+                font-size : 1.2rem;
+                font-weight: 600;
+            }
+
+            &-date {
+                color: $base-lighten-color;
+                font-size: .75rem;
+                text-transform: uppercase;
+            }
+        }
+    }
+}

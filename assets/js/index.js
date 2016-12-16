@@ -5,9 +5,9 @@ function initInstagram() {
 		accessToken: '3953160061.5e270e0.e387c4bf0e3041e4a20e2059e379fe40',
 		target: 'instafeed',
 		resolution: 'standard_resolution',
-		template: '<div class="col-xs-12 col-sm-6 col-md-3"><a href="{{link}}"><img src="{{image}}" /></a></div>',
+		template: '<div class="col-xs-12 col-sm-2"><a href="{{link}}" target="_blank"><img src="{{image}}" /></a></div>',
 		after: function() {
-			var rem = ($('#instafeed').children().length % 4);
+			var rem = ($('#instafeed').children().length % 6);
 			if (rem !== 0) {
 				for (var i = 1; i <= rem; i++) {
 					$('#instafeed').children()[$('#instafeed').children().length - i].remove();
@@ -69,37 +69,37 @@ function initAnchor() {
 	var tween = TweenMax.from("#skillsTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#skills", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	var tween = TweenMax.from("#hiremeTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#hireme", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	var tween = TweenMax.from("#portfolioTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#portfolio", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	var tween = TweenMax.from("#blogTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#blog", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	var tween = TweenMax.from("#instagramTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#instagram", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	var tween = TweenMax.from("#testimonialsTween", 0.5, {autoAlpha: 0, scale: 0.7});
 	var scene = new ScrollMagic.Scene({triggerElement: "a#contact", duration: 400, triggerHook: "onEnter"})
 					.setTween(tween)
-					.addIndicators() // add indicators (requires plugin)
+					// .addIndicators() // add indicators (requires plugin)
 					.addTo(controller);
 
 	// change behaviour of controller to animate scroll instead of jump

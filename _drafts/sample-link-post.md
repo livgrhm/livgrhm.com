@@ -2,7 +2,7 @@
 layout: post
 title: Sample Link Post
 description: "This theme supports link posts, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done."
-image: "http://weknowyourdreams.com/images/dog/dog-01.jpg"
+image: "https://dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
 tags:
   - sample post
   - link post

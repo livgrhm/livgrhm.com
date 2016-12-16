@@ -10,6 +10,4 @@ comments: true
 share: true
 ---
 
-To me:
-* Have an open mind, don’t be afraid to throw it away or change direction if not working. Maximise user feedback. New product, start with minimum viable, go back and solidify once you know its working
-* Being flexible in development, but key is to know your vision. Where you see the product going
+This blog post is coming soon.

@@ -3,16 +3,16 @@
 <div class="hireme jumbotron dark">
 	<div id="hiremeTween" class="container">
 		<div class="row">
-			<div class="col-md-12">
-				<h2>Work with Me</h2>
+			<div class="col-sm-8 col-sm-offset-2">
+				<h2><i class="fa fa-code" aria-hidden="true"></i> Work with Me</h2>
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-md-12">
+			<div class="col-sm-8 col-sm-offset-2">
 				{% for item in site.data.workwithme %}
 				<p>{{ item.paragraph }}</p>
 				{% endfor %}
-				<div>
+				<div class="text-center">
 					<a href="{{ site.resumeurl }}" target="_blank">
 						<button class="btn btn-primary">Download my CV</button>
 					</a>

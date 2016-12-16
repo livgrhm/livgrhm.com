@@ -1,45 +1,95 @@
----
-layout: default
----
-<header>
-  <h1 class="header-small">
-    <a href="{{ site.baseurl }}">{{ site.name }}</a>
-  </h1>
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+{% include head.html %}
+<header class="blog-header">
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-fixed-top navbar-opa">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="{{ site.baseurl }}/">
+                    <img id="logo" src="/assets/images/logo/logo_c.png" alt="" title="livgrhm" /></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <div class="post-header jumbotron">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <h1>{{ site.name }}.</h1>
+                </div>
+                <div class="col-md-4 text-right social-links-blog">
+                    <ul>
+                    {% if site.author.email %}
+                        <li><a href="mailto:{{ site.author.email }}" title="Email Me">
+                            <i class="fa fa-mail-reply" aria-hidden="true" alt="Email"></i></a></li>
+                    {% endif %}
+                    {% if site.author.linkedin %}
+                        <li><a target="_blank" href="https://uk.linkedin.com/in/{{ site.author.linkedin }}" title="Check out my LinkedIn">
+                            <i class="fa fa-linkedin" aria-hidden="true" alt="LinkedIn"></i></a></li>
+                    {% endif %}
+                    {% if site.author.github %}
+                        <li><a target="_blank" href="https://github.com/{{ site.author.github }}" title="Check out my GitHub">
+                            <i class="fa fa-github" aria-hidden="true" alt="GitHub"></i></a></li>
+                    {% endif %}
+                    {% if site.author.twitter %}
+                        <li><a target="_blank" href="https://twitter.com/{{ site.author.twitter }}" title="Follow me on Twitter">
+                            <i class="fa fa-twitter" aria-hidden="true" alt="Twitter"></i></a></li>
+                    {% endif %}
+                    {% if site.author.instagram %}
+                        <li><a target="_blank" href="https://www.instagram.com/{{ site.author.instagram }}" title="Check out my Instagram">
+                            <i class="fa fa-instagram" aria-hidden="true" alt="Instagram"></i></a></li>
+                    {% endif %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><!-- /.jumbotron -->
 </header>
-<div class="post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <span class="post-date">
-    <time>{{ page.date | date_to_string }}</time>
-  </span>
-  <div class="post-tag">
-    <ul>
-      {% for tag in page.tags %}
-      <li>
-        <a href="{{ site.url }}/tags#{{ tag }}" class="tag">
-          <span class="term">{{ tag }}</span>
-        </a>
-      </li>
-      {% unless forloop.last %}{% endunless %}
-      {% endfor %}
-    </ul>
-  </div>
+<body class="post">
+    <div class="container">
+        <div class="row post-row">
+            <div class="col-md-12">
+                <h1 class="post-title">{{ page.title }}</h1>
+                <span class="post-date">
+                  <time>{{ page.date | date_to_string }}</time>
+                </span>
+                <div class="post-tag">
+                    <ul>
+                    {% for tag in page.tags %}
+                        <li>
+                            <a href="{{ site.url }}/tags#{{ tag }}" class="tag">
+                                <span class="term">{{ tag }}</span>
+                            </a>
+                        </li>
+                    {% unless forloop.last %}{% endunless %}
+                    {% endfor %}
+                    </ul>
+                </div>
+                <div class="post-content">
+                    {{ content }}
+                </div>
 
-  {{ content }}
+                <!-- Share -->
+                {% if page.share != false %}
+                <div class="post-share">
+                  <hr>
+                  {% include share.html %}
+                  <hr>
+                </div>
+                {% endif %}
 
-
-  <!-- Share -->
-  <!-- {% if page.share != false %}
-  <div class="post-share">
-    <hr>
-    {% include share.html %}
-    <hr>
-  </div>
-  {% endif %} -->
-
-  <!-- Disqus -->
-  {% if page.comments != false and site.disqus.id %}
-  <section id="disqus_thread"></section>
-  {% include disqus.html %}
-  {% endif %}
-
-</div>
+                <!-- Disqus -->
+                {% if page.comments != false and site.disqus.id %}
+                <div id="disqus_thread"></div>
+                {% include disqus.html %}
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}
+</body>
+</html>

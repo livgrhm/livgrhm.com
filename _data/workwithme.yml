@@ -1,16 +1,14 @@
 - paragraph:    "I have over 5 years of full-stack experience working across a
 variety of different technologies, frameworks and stacks. My core experience is
-in PHP [Zend], Java [Dropwizard], JavaScript [Angular 1&2. JQuery, Prototype],
+in PHP [Zend], Java 8 [Dropwizard], JavaScript [Angular 1&2, JQuery, Prototype],
 CSS 3 [Bootstrap 3, Less/Sass], WebServices [Java/Go], Mobile [Ionic 2]."
-- paragraph:    "I’m particularly interested in back-end roles with PHP or Java.
+- paragraph:    "I'm particularly interested in back-end roles with PHP or Java.
 I believe that being the best as a software engineer requires interest & knowledge
 of the whole product development lifecycle, and calling on a whole suite of tools
 & tech (elude to working in an agile way, use of subversion/git, unix file system,
 SSL, security)."
-- paragraph:    "Learning new langs - currently learning Python+Django (?).
-Ruby + Rails (?). Swift (?)"
-- paragraph:    "What I’m looking for - building new stuff. education. Product
-I believe in. Agile team"
-- paragraph:    "If you’re looking for an independent project, click here for availability and to get a quote
-If you’re looking hire me for a contract or work with me in another capacity, click here.
-LINK TO CV"
+# - paragraph:    "Learning new langs - currently learning Python+Django (?).
+# Ruby + Rails (?). Swift (?)"
+# - paragraph:    "What I’m looking for - building new stuff. education. Product
+# I believe in. Agile team"
+- paragraph:    "If you're interested in working with me, or just finding out more then get in contact!"

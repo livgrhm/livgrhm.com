@@ -1,0 +1,95 @@
+// xs = width < 768px
+// sm = width ≥ 768px
+// md = width ≥ 992px
+// lg = width ≥ 1200px
+
+/*--------------
+  HTML/Body
+  -------------- */
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+    font-weight: 300;
+    line-height: 1.6;
+
+    @media (min-width: 38em) {
+        font-size: 20px;
+    }
+}
+
+html,
+body {
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------
+  Nav
+  -------------- */
+nav {
+    li {
+        font-family: $nav-font!important;
+        margin-bottom: 0;
+
+        a {
+            color: $nav-color;
+        }
+    }
+}
+
+.nav > li > a:focus,
+.nav > li > a:hover {
+    background-color: RGBA(181, 172, 167, 1.00) !important;
+    color: white;
+}
+
+.navbar {
+    .navbar-brand {
+        padding: 5px 15px 15px 15px;
+
+        img {
+            height: 50px;
+        }
+    }
+}
+
+.header .navbar-opa {
+    background-color: RGBA(184, 168, 155, 0.6);
+}
+
+.blog-header .navbar-opa {
+    background-color: RGBA(184, 168, 155, 1.00)
+}
+
+.navbar-toggle .icon-bar {
+    background-color: $base-color!important;
+}
+
+/*--------------
+  General
+  -------------- */
+.container {
+    font-family: $base-font;
+    color: $text-color;
+
+    h1, h2, h3, h4, h5 {
+        color: $heading-color;
+    }
+}
+
+.jumbotron.light {
+    background-color: $base-lighten-color;
+}
+
+.jumbotron.dark {
+    background-color: $base-color;
+}
+
+.btn {
+    font-family: $nav-font;
+}
