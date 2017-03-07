@@ -8,6 +8,7 @@
 # {{ site.myvariable }}
 
 # Basic
+environment:        production
 name:               "Olivia Rose Graham"
 description: > # this means to ignore newlines until "baseurl:"
   Olivia Graham: Freelance/contract full-stack web developer
@@ -101,5 +102,6 @@ defaults:
 gems:
   - jekyll-seo-tag
   - jekyll-paginate
+  - jekyll-assets
 
 # exclude:            [vendor]
