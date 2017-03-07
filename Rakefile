@@ -1,6 +1,6 @@
 # Refer to https://github.com/plusjade/jekyll-bootstrap/blob/master/Rakefile
 
-require "rubygems"
+require 'rubygems'
 require 'rake'
 require 'yaml'
 require 'time'
@@ -36,8 +36,10 @@ task :post do
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
     post.puts 'description: ""'
+    post.puts 'image: ""'
     post.puts "date: #{date}"
     post.puts "tags: #{tags}"
+    post.puts 'author: "Olivia Graham"'
     post.puts "comments: true"
     post.puts "share: true"
     post.puts "---"
@@ -68,8 +70,10 @@ task :draft do
     draft.puts "layout: post"
     draft.puts "title: \"#{title.gsub(/-/,' ')}\""
     draft.puts 'description: ""'
+    draft.puts 'image: ""'
     draft.puts "date: #{date}"
     draft.puts "tags: #{tags}"
+    draft.puts 'author: "Olivia Graham"'
     draft.puts "comments: true"
     draft.puts "share: true"
     draft.puts "---"
