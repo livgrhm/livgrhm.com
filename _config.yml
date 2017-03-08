@@ -27,7 +27,7 @@ author:
   # medium:           your-id
   # tumblr:           your-id
 
-resumeurl:          "https://www.kickresume.com/cv/livgrhm/"
+resumeurl:          "//www.kickresume.com/cv/livgrhm/"
 
 # Google-analytics
 google-analytics:
@@ -43,7 +43,7 @@ disqus:
 
 # URL
 #production
-url:                "http://livgrhm.com" # the base hostname & protocol for your site
+url:                "//livgrhm.com" # the base hostname & protocol for your site
 #development
 #url:               "localhost:4000"
 baseurl:            "" # the subpath of your site, e.g. /blog

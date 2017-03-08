@@ -2,7 +2,7 @@
 layout: post
 title: "Guest Blog Post for WITsend on ComputerWeekly.com"
 description: "A guest blog post for the WITsend blog on ComputerWeekly.com - About my experiences being a woman in tech & in particular the gender gap in Computer Science."
-image: "https://dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
+image: "//dl.dropboxusercontent.com/u/28544515/livgrhm/witsend_post.jpg"
 date: 2014-03-28
 tags: [women in tech, computer weekly, tech]
 author: "Olivia Graham"
@@ -12,7 +12,7 @@ share: true
 
 This is a guest blog post that I wrote in 2014 for ComputerWeekly.com's Women in Tech blog WITSend.
 
-You can find the original post <a href="http://www.computerweekly.com/blogs/witsend/2014/03/mind-the-gender-gap-why-being-a-woman-in-it-motivates-me-to-be-successful.html">here</a>.
+You can find the original post <a href="//www.computerweekly.com/blogs/witsend/2014/03/mind-the-gender-gap-why-being-a-woman-in-it-motivates-me-to-be-successful.html">here</a>.
 
 One of the main reasons that I got into computer science is influence from my father – he has previously been a programmer and inspired me to take up the subject at college and then at University.
 
